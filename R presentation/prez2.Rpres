@@ -1,0 +1,133 @@
+<style>
+
+
+.zielony .state-background {
+  background: rgba(0, 255, 0, 0.08);
+}
+
+.czerwony .reveal .state-background {
+  background: rgba(255, 0, 0, 0.08);
+}
+
+.last .reveal .state-background {
+  background: rgba(166, 189, 219, 0.25);
+}
+
+</style>
+
+
+
+
+How to get rich: Candlestick Chart
+========================================================
+author: Ewa Guziewicz, Dawid Kowalczyk
+date: 12 December 2018
+autosize: true
+transition: rotate
+
+<br>
+<br>
+<div class="footer" style="margin-top:-10px;">Prezentacja z przedmiotu TWD na wydziale MiNI PW</div>
+
+Quick historical overview
+========================================================
+transition: rotate
+
+<br>
+
+* 18th century, Munehisa Homma - Japanese rice trader of financial instruments
+  * Hence other name: *Japanese candlestick chart*
+* 1996 West: Steve Nison - *Japanese Candlestick Charting Techniques*
+  * More likely: candle charts developed in the late 1800s
+* Nowadays used in stock analysis
+
+
+What is a candle?
+========================================================
+transition: linear
+
+
+<img src="candle.png" width = 2000px height = 500px style="background-color:transparent; border:0px; box-shadow:none;"></img>
+
+<div class="footer" style="margin-top:-10px; color:grey; font-size:25px; text-align:right">source: datavizcatalogue.com/methods/candlestick_chart.html</div>
+
+
+Types of candlesticks
+========================================================
+transition: linear
+
+
+<iframe style="width: 100%; height: 100%; position: absolute;" src="./rodzaje_swiec.html" allowtransparency="true" background-color:rgba(0, 255, 0, 0.05);> </iframe>
+
+
+
+
+========================================================
+transition: fade
+
+
+<iframe style="width: 100%; height: 100%; position: absolute;" src="./demo.html" allowtransparency="true"> </iframe>
+
+
+Candlestick encoding
+========================================================
+transition: fade
+
+```{r, echo=TRUE, warnings = FALSE, eval= FALSE, error = FALSE, include=TRUE}
+
+df %>%
+  plot_ly(x = ~Date,
+          type  = "candlestick",
+          open  = ~Open,
+          close = ~Close,
+          high  = ~High,
+          low   = ~Low)
+```
+
+
+
+
+How to invest using candlesticks?
+========================================================
+transition: linear
+type: zielony
+
+### Examples of upward trend candles ###
+
+<iframe src="./wzrosty.html"style="width: 100%; height: 100%; position: absolute;" allowtransparency="true" background-color:rgba(0, 255, 0, 0.05);> </iframe>
+
+
+
+
+How to invest using candlesticks?
+========================================================
+transition: linear
+type: czerwony
+
+### Examples of downward trend candles ###
+
+<iframe src="./spadki.html" style="width: 100%; height: 100%; position: absolute;" allowtransparency="true" background-color:rgba(255, 0, 0, 0.05);> </iframe>
+
+
+
+
+Does it really work?
+========================================================
+transition: zoom
+
+<iframe src="./EURUSD.html" style="width: 100%; height: 100%; position: absolute;" allowtransparency="true"> </iframe>
+
+
+
+Thank you for attention!
+========================================================
+transition: rotate
+type: last
+
+
+
+<center><img src="end_slide.svg" style="width: 60%; height: 60%; position: absolute, background-color:transparent;" border:0px; box-shadow:none;"></img></center>
+
+... and good luck while investing :)
+
+
