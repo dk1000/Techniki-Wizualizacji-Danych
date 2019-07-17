@@ -1,9 +1,22 @@
 
+if(!require(plotly)){
+  install.packages("plotly")
+  library(plotly) 
+}
 
+if(!require(RColorBrewer)){
+  install.packages("RColorBrewer")
+  library(RColorBrewer) 
+}
 
-library(plotly)
-library(RColorBrewer)
-library(dplyr)
+if(!require(dplyr)){
+  install.packages("dplyr")
+  library(dplyr) 
+}
+
+# library(plotly)
+# library(RColorBrewer)
+# library(dplyr)
 
 setwd("C:/Users/Dawid.Kowalczyk/Google Drive/Studia MiNI PW/III semestr/Techniki wizualizacji danych/PD8/")
 
