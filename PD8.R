@@ -18,7 +18,7 @@ if(!require(dplyr)){
 # library(RColorBrewer)
 # library(dplyr)
 
-setwd("C:/Users/Dawid.Kowalczyk/Google Drive/Studia MiNI PW/III semestr/Techniki wizualizacji danych/PD8/")
+#setwd("C:/Users/Dawid.Kowalczyk/Google Drive/Studia MiNI PW/III semestr/Techniki wizualizacji danych/PD8/")
 
 
 ### cone
@@ -126,8 +126,9 @@ plot = plot_ly() %>%
 
 #hide_colorbar(plot)
 
+plot
 
-htmlwidgets::saveWidget(as_widget(hide_colorbar(plot)), "choinka.html")
+#htmlwidgets::saveWidget(as_widget(hide_colorbar(plot)), "choinka.html")
 
 
 
